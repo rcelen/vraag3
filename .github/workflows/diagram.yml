@@ -29,7 +29,7 @@ jobs:
         id: make_diagram
         uses: githubocto/repo-visualizer@0.7.1
         with:
-          output_file: "output-diagram.svg"
+          # output_file: "output-diagram.svg"
           artifact_name: "diagram"
       - name: Get artifact
         uses: actions/download-artifact@v2
