@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: vraag3Action
 
 # Controls when the workflow will run
 on:
@@ -29,7 +29,7 @@ jobs:
         id: make_diagram
         uses: githubocto/repo-visualizer@0.7.1
         with:
-          # output_file: "output-diagram.svg"
+          output_file: "output-diagram.svg"
           artifact_name: "diagram"
       - name: Get artifact
         uses: actions/download-artifact@v2
