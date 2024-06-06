@@ -29,7 +29,8 @@ jobs:
         id: make_diagram
         uses: githubocto/repo-visualizer@0.7.1
         with:
-          output_file: "output-diagram.svg"
+          # Door onderstaande lijn in commentaar te zetten wordt er geen echte file aangemaakt
+          # output_file: "output-diagram.svg"
           artifact_name: "diagram"
       - name: Get artifact
         uses: actions/download-artifact@v2
